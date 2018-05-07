@@ -1,0 +1,25 @@
+.dropdown {
+  margin: 10px 5px;
+}
+
+.dropdown .caret {
+  margin-left: 18px;
+  color: $color-base;
+}
+
+.dropdown__toggle {
+  min-width: 140px;
+  color: $color-line;
+  border: 1px $color-line solid;
+  background: #fff;
+  text-align: left;
+  &:hover,
+  &:focus {
+    background: $color-bg;
+  }
+  &.is-selected,
+  &.is-active {
+    color: $color-base;
+  }
+}
+

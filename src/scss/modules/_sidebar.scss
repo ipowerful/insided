@@ -23,12 +23,12 @@
   font-size: 14px;
   color: $color-base;
   
-  &.active,
+  &.is-active,
   &:hover {
     border-left: 4px $color-blue solid;
   }
 
-  &.active {
+  &.is-active {
     border-bottom: 1px solid $color-line;  
   }
 }
@@ -50,7 +50,7 @@
   color: $color-base;
   @include link();
 
-  &.active {
+  &.is-active {
     font-weight: 700;
   }
 }

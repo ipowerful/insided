@@ -81,13 +81,13 @@
               </a>
             </li>
             <li>
-              <a href="#" role="button" class="js-has-subnav active">
+              <a href="#" role="button" class="js-has-subnav is-active">
                 <i class="ico-user"></i>
                 Users
               </a>
               <ul class="sidebar__subnav" style="display: block;">
                 <li>
-                  <a href="#" class="active">Overview</a>
+                  <a href="#" class="is-active">Overview</a>
                 </li>
                 <li>
                   <a href="#">Moderation</a>
@@ -109,6 +109,19 @@
       <main class="main">
         <header class="header container-fluid">
           <h1 class="header__heading">User overview</h1>
+          <div class="dropdown">
+            <button class="button dropdown__toggle">
+              Filter usergroup
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Captain</a></li>
+              <li><a href="#">Colonel</a></li>
+              <li><a href="#">General</a></li>
+              <li><a href="#">Lieutenant</a></li>
+              <li><a href="#">Officer</a></li>
+            </ul>
+          </div>
           <button class="button button__default"><i class="ico-sliders"></i> Advanced filter</button>
           <button class="button button__primary">Add user</button>
         </header>
