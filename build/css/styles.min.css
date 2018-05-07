@@ -3600,7 +3600,10 @@ select::-ms-expand {
 .dropdown {
   margin: 10px 5px; }
 
-.dropdown .caret {
+.dropdown__caret {
+  position: absolute;
+  right: 10px;
+  top: 12px;
   margin-left: 18px;
   color: #111; }
 
