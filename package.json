@@ -1,0 +1,45 @@
+{
+  "name": "cp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "beepbeep": "^1.2.1",
+    "fontello-cli": "^0.4.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-composer": "^0.4.5",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-uglify-es": "^1.0.1",
+    "gulp-useref": "^3.1.5",
+    "gulp-util": "^3.0.8",
+    "gulp-version-number": "^0.1.7",
+    "gulp-watch": "^4.3.11",
+    "gulp.spritesmith": "^6.9.0",
+    "imagemin-pngquant": "^5.0.1",
+    "rimraf": "^2.6.2",
+    "yargs": "^11.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

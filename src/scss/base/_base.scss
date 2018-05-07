@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+	min-width: 1200px;
+  overflow-y: scroll;
+}
+
+body {
+	height: 100%;
+  background: #fff;
+}
+
+a {
+	text-decoration: none;
+	transition: $transition-fast;
+	&:hover,
+	&:focus,
+	&:active {
+    outline: 0;
+    text-decoration: none;
+    color: $color-gray;
+	}
+}
+pre {
+	margin: 0;
+	background: transparent;
+	border: none;
+	font-family: $font-base;
+	font-size: 1em;
+}
+
+button {
+   &:active, 
+   &:focus {
+      outline: none !important;
+   }
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-gray-dark;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+}
+select::-ms-expand { 
+  display: none; /* remove default arrow in IE 10 and 11 */
+}

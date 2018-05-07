@@ -1,0 +1,111 @@
+@mixin respond-to($media) {
+   $i: 0; // счетчик для определения первого элемента, а именно под разрешение телефона
+   @each $key, $value in $screen-widths {
+      @if $media == $key {
+         @if $i == 0 {
+            @media only screen and (max-width: $value) { 
+              @content; 
+            }
+         } @else{
+            @media only screen and (min-width: $value) { 
+               @content; 
+            }
+         }
+      }
+      $i: $i + 1; 
+   }
+}
+
+@mixin noGutter() {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;  
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@mixin abs-h-center-auto() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin abs-v-center-auto() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin abs-center-auto() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin absolute() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin box() {
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  @include ubideo-text();
+}
+
+@mixin flex-holder() {
+  @include respond-to('desktop') {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    .col {
+      display: flex;
+      align-items: stretch;
+    }
+  }
+}
+
+@mixin link() {
+  transition: $transition-fast;
+
+  &:hover,
+  &:focus,
+  a:visited {
+    color: $color-blue;
+    border-color: $color-blue;
+    background: transparent;
+  }
+}

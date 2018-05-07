@@ -1,0 +1,10 @@
+.list-inline {
+  margin: 0;
+}
+
+.container {
+  &:before,
+  &:after {
+    display: none;
+  }
+}

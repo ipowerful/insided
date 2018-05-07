@@ -1,0 +1,49 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+///== Fonts
+///
+$font-path: '../font';
+$font-base: 'Helvetica Neue',Helvetica,Arial,Sans-Serif;
+//$font-base: Helvetica,Arial,Sans-Serif;
+
+///== Colors
+///
+$color-base: #111;
+
+$color-gray-dark: #333;
+$color-gray: #878787;
+$color-gray2: #c5c5c5;
+
+$color-bg: #f8f8f8;
+$color-line: $color-gray2;
+
+$color-red: #ee2f24;
+
+$color-blue: #1dadf5;
+$color-blue-brd: #228bc2;
+
+$color-green: #0c903f;
+
+
+///== Screen resolution
+///
+
+$screen-widths: (
+	'phone':		767px, // xs
+	'tablet':		768px, // sm
+	'desktop':	992px, // md
+  'wide':     1200px, // lg
+  'mwide':    1400px, // lg
+  'xwide':    1800px, // lg
+);
+
+
+//== Transitions
+//
+$transition: all 0.1s ease-out 0.1s;
+$transition-slow: all 0.2s ease-out 0.2s;
+$transition-fast: all 0.2s ease-out 0s;
+$transition2: all 0.2s cubic-bezier(0.35, 0, 0.25, 1) 0s;

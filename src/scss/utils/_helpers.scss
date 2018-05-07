@@ -1,0 +1,49 @@
+.h-ulink {
+  text-decoration: underline;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+.h-relative {
+  position: relative;
+}
+.h-bold {
+  font-weight: 600;
+}
+.h-font-medium {
+  font-size: 120%;
+}
+
+.h-block {
+  display: block;
+}
+
+.h-inline-block {
+  display: inline-block;
+}
+
+.h-grey {
+  font-size: 12px;
+  line-height: 15px;
+  color: $color-gray;
+}
+
+.h-black {
+  color: $color-base;
+  @include link();
+}
+
+.h-blue {
+  color: $color-blue;
+  @include link();
+}
+
+.h-flex-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.h-flex-holder {
+  @include flex-holder();
+}
