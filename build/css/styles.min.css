@@ -3535,3 +3535,29 @@ select::-ms-expand {
 .main .container-fluid {
   padding-left: 30px;
   padding-right: 30px; }
+
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #c5c5c5;
+  padding: 0 15px; }
+
+.header__heading {
+  font-size: 25px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0; }
