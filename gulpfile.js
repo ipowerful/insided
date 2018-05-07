@@ -36,6 +36,7 @@ var path = {
         font: ['src/font/**/*.*', 'node_modules/flowplayer/dist/skin/icons/*.*'],
         favicon: 'src/favicon.ico',
         php: ['src/**/*.php', '!src/*.php'],
+        data: 'src/data/*.*',
         htaccess: 'src/.htaccess',
         js_plugins: 'src/js_plugins/**/*.*'
     },
@@ -45,12 +46,14 @@ var path = {
         jsVendor: 'src/js/',
         img: 'build/img/',
         font: 'build/font/',
+        data: 'build/data/',
         js_plugins: 'build/js_plugins/'
     },
     watch: {
         html: 'src/**/*.html',
         favicon: 'src/favicon.ico',
         php: 'src/**/*.php',
+        data: 'src/data/*.*',
         htaccess: 'src/.htaccess',
         js: 'src/js/**/*.js',
         scss: 'src/scss/**/*.scss',
@@ -128,6 +131,12 @@ gulp.task('favicon', function () {
         .pipe(connect.reload());
 });
 
+gulp.task('data', function () {
+    gulp.src(path.src.data)
+        .pipe(gulp.dest(path.build.data))
+        .pipe(connect.reload());
+});
+
 gulp.task('php', function () {
     gulp.src(path.src.php)
         .pipe(gulp.dest(path.build.base))
@@ -187,6 +196,10 @@ gulp.task('watch', function(){
 
     watch([path.watch.php], function(event, cb) {
         gulp.start('php');
+    });
+
+    watch([path.watch.data], function(event, cb) {
+        gulp.start('data');
     });
 
     watch([path.watch.js], function(event, cb) {
