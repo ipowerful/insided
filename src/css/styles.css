@@ -2708,7 +2708,9 @@ tbody.collapse.in {
 .list-inline {
   margin: 0; }
 
-.container:before, .container:after {
+.container:before, .container:after,
+.container-fluid:before,
+.container-fluid:after {
   display: none; }
 
 html {
@@ -2798,10 +2800,6 @@ select::-ms-expand {
   padding-bottom: 30px; }
 
 .topbar {
-  background: #111; }
-
-.topbar__holder {
-  height: 51px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2813,7 +2811,9 @@ select::-ms-expand {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  height: 51px;
+  background: #111; }
 
 .topbar__logo {
   height: 25px; }

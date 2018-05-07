@@ -2,7 +2,8 @@
   margin: 0;
 }
 
-.container {
+.container,
+.container-fluid {
   &:before,
   &:after {
     display: none;

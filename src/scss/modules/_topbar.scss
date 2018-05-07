@@ -1,0 +1,48 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 51px;
+
+  background: $color-base;
+}
+
+.topbar__logo {
+  height: 25px;
+}
+
+.topbar__nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  @include list();
+}
+
+.topbar__nav > li {
+  margin-right: 10px;
+}
+
+.topbar__nav > li > a {
+  color: $color-gray;
+  @include link();
+}
+
+.topbar__nav-mail {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  @include link();
+  &:before {
+    margin: auto;
+  }
+}
+
+.topbar__avatar {
+  width: 30px;
+  height: 30px;
+}

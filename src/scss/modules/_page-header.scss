@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 90px;
+  background: $color-bg;
+  border-bottom: 1px solid $color-line;
+
+  padding: 0 15px;
+}
+
+.header__heading {
+  font-size: 25px;
+  flex: 1 1 auto;
+  margin: 0;
+}
