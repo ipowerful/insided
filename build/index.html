@@ -109,17 +109,58 @@
       <main class="main">
         <header class="header container-fluid">
           <h1 class="header__heading">User overview</h1>
-          <div class="dropdown">
+          <div class="dropdown dropdown-filter">
+            <div class="dropdown__backdrop"></div>
             <button class="button dropdown__toggle">
               <span class="dropdown__name">Filter usergroup</span>
-              <span class="dropdown__caret caret"></span>
+              <span class="dropdown__caret"></span>
             </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Captain</a></li>
-              <li><a href="#">Colonel</a></li>
-              <li><a href="#">General</a></li>
-              <li><a href="#">Lieutenant</a></li>
-              <li><a href="#">Officer</a></li>
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#" role="button">
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox">
+                    <i class="ico-ok"></i>
+                    Captain
+                  </label>
+                </a>
+              </li>
+              <li>
+                <a href="#" role="button">
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox">
+                    <i class="ico-ok"></i>
+                    Colonel
+                  </label>
+                </a>
+              </li>
+              <li>
+                <a href="#" role="button">
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox">
+                    <i class="ico-ok"></i>
+                    General
+                  </label>
+                </a>
+              </li>
+              <li>
+                <a href="#" role="button">
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox">
+                    <i class="ico-ok"></i>
+                    Lieutenant
+                  </label>
+                </a>
+              </li>
+              <li>
+                <a href="#" role="button">
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkbox">
+                    <i class="ico-ok"></i>
+                    Officer
+                  </label>
+                </a>
+              </li>
             </ul>
           </div>
           <button class="button button__default"><i class="ico-sliders"></i> Advanced filter</button>
