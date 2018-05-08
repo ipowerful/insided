@@ -75,6 +75,9 @@
   &.is-checked {
     color: #fff;
     background-color: $color-blue-light; 
+    &:hover {
+      background-color: $color-blue;
+    }
   }
 }
 

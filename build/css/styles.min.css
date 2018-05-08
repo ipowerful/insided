@@ -3237,6 +3237,8 @@ select::-ms-expand {
   .dropdown__menu > li > a.is-checked {
     color: #fff;
     background-color: #77cef9; }
+    .dropdown__menu > li > a.is-checked:hover {
+      background-color: #1dadf5; }
 
 .dropdown__backdrop {
   display: none;
