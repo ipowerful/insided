@@ -1,4 +1,4 @@
-.header {
+.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,8 +10,12 @@
   padding: 0 15px;
 }
 
-.header__heading {
+.page-header__heading {
   font-size: 25px;
   flex: 1 1 auto;
   margin: 0;
+}
+
+.page-header__search {
+  width: 350px;
 }

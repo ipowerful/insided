@@ -72,3 +72,12 @@ select {
 select::-ms-expand { 
   display: none; /* remove default arrow in IE 10 and 11 */
 }
+
+input[type="text"] {
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-input-placeholder {
+    color: $color-gray2;
+  }
+}
