@@ -1886,7 +1886,7 @@ input[type="text"]::-webkit-input-placeholder {
   padding-left: 30px;
   padding-right: 30px; }
 
-.page-header {
+.page-top {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1904,7 +1904,7 @@ input[type="text"]::-webkit-input-placeholder {
   border-bottom: 1px solid #c5c5c5;
   padding: 0 15px; }
 
-.page-header__heading {
+.page-top__heading {
   font-size: 25px;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
@@ -1912,7 +1912,7 @@ input[type="text"]::-webkit-input-placeholder {
           flex: 1 1 auto;
   margin: 0; }
 
-.page-header__search {
+.page-top__search {
   width: 350px; }
 
 .button {
