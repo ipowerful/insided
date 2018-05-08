@@ -1,0 +1,5 @@
+.faded {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility .2s, opacity .2s;
+}
