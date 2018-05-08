@@ -22,7 +22,7 @@
   border-left: 4px solid transparent;
 }
 
-.dropdown__toggle {
+.dropdown__button {
   min-width: 140px;
   color: $color-line;
   border: 1px $color-line solid;
@@ -65,7 +65,8 @@
   clear: both;
   color: $color-base;
   white-space: nowrap;
-
+  transition: none;
+  
   &:hover {
     color: #fff;
     background-color: $color-blue;
