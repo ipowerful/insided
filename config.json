@@ -71,6 +71,18 @@
       "css": "search",
       "code": 59407,
       "src": "fontawesome"
+    },
+    {
+      "uid": "6846d155ad5bda456569df81f3057faa",
+      "css": "clone",
+      "code": 62029,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2d6150442079cbda7df64522dc24f482",
+      "css": "down-dir",
+      "code": 59398,
+      "src": "fontawesome"
     }
   ]
 }

@@ -1,0 +1,89 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  
+  
+
+  thead {
+    > tr {
+      background: $color-bg;
+      background: linear-gradient(to bottom,  #fff, #f9f9f9);
+      border: 1px $color-line solid;
+      > th {
+        height: 44px;
+        padding: 10px;
+        font-weight: 700px;
+        text-align: left;
+        white-space: nowrap;
+        > a {
+          
+          color: $color-base;
+          > i {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  tbody {
+    > tr {
+      &:nth-child(2n) {
+        background: $color-bg;
+      }
+      > td {
+        height: 54px;
+        padding: 10px;
+        border: 1px $color-line solid;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.table__col-username {
+  width: 33.31%;
+}
+
+.table__cell-username {
+  
+}
+.table__username-holder {
+  display: flex;
+  align-items: center;
+}
+.table__username {
+  flex: 1 1 auto;
+}
+
+.table__avatar {
+  margin-right: 10px;
+}
+
+.table__checkbox { 
+  margin-right: 10px;
+}
+
+.table__col-email {
+  width: 16.04%;
+}
+
+.table__col-replies {
+  width: 7.21%;
+}
+.table__col-topics {
+  width: 6.62%;
+}
+.table__col-solved {
+  width: 6.87%;
+}
+.table__col-usergroup {
+  width: 8.74%;
+}
+.table__col-rdate {
+  width: 12.22%;
+}
+.table__col-ldate {
+  width: 8.99%; 
+}

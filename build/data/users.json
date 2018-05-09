@@ -1,0 +1,123 @@
+[
+  {
+    "username": "Lucy Bennett",
+    "email": "helmer.waters@gmail.com",
+    "replies": 9815,
+    "topics": 468,
+    "solved": 33,
+    "usergroup": "Colonel",
+    "rdate": "01 Mar 2016",
+    "ldate": "01 Mar 2016",
+    "img": "user1.png"
+  },
+  {
+    "username": "Lula Fuller",
+    "email": "hahn@hotmail.com",
+    "replies": 8724,
+    "topics": 684,
+    "solved": 512,
+    "usergroup": "Officer",
+    "rdate": "06 May 2016",
+    "ldate": "20 Jul 2016",
+    "img": "user2.png"
+  },
+  {
+    "username": "Sally Williams",
+    "email": "tressie.prosacco@hotmail.com",
+    "replies": 7265,
+    "topics": 442,
+    "solved": 784,
+    "usergroup": "General",
+    "rdate": "29 Dec 2016",
+    "ldate": "19 Jun 2016",
+    "img": "user3.png"
+  },
+  {
+    "username": "Roger Ortiz",
+    "email": "frami_kobe@little.me",
+    "replies": 6158,
+    "topics": 443,
+    "solved": 49,
+    "usergroup": "Colonel",
+    "rdate": "25 Dec 2016",
+    "ldate": "03 Dec 2016",
+    "img": "user4.png"
+  },
+  {
+    "username": "Zachary Jensen",
+    "email": "ratke_kenyatta@hotmail.com",
+    "replies": 5627,
+    "topics": 37,
+    "solved": 770,
+    "usergroup": "Lieutenant",
+    "rdate": "18 Apr 2016",
+    "ldate": "03 Apr 2016",
+    "img": "user5.png"
+  },
+  {
+    "username": "Jane Morris",
+    "email": "schuppe.demarco@aurore.tv",
+    "replies": 4615,
+    "topics": 104,
+    "solved": 155,
+    "usergroup": "Lieutenant",
+    "rdate": "11 Sep 2016",
+    "ldate": "23 Nov 2016",
+    "img": "user6.png"
+  },
+  {
+    "username": "Jesus Cortez",
+    "email": "stephen_lesch@hotmail.com",
+    "replies": 3309,
+    "topics": 631,
+    "solved": 444,
+    "usergroup": "Lieutenant",
+    "rdate": "15 Dec 2016",
+    "ldate": "19 Oct 2016",
+    "img": "user7.png"
+  },
+  {
+    "username": "Rodney Gray",
+    "email": "dooley_leilani@hotmail.com",
+    "replies": 2888,
+    "topics": 921,
+    "solved": 554,
+    "usergroup": "Captain",
+    "rdate": "30 Sep 2016",
+    "ldate": "19 Feb 2016",
+    "img": "user8.png"
+  },
+  {
+    "username": "Norman Klein",
+    "email": "haylie_wilkinson@murazik.us",
+    "replies": 1782,
+    "topics": 754,
+    "solved": 133,
+    "usergroup": "Lieutenant",
+    "rdate": "30 Dec 2016",
+    "ldate": "24 Jan 2016",
+    "img": "user9.png"
+  },
+  {
+    "username": "Mitchell Barton",
+    "email": "john.daugherty@yahoo.com",
+    "replies": 999,
+    "topics": 402,
+    "solved": 526,
+    "usergroup": "Captain",
+    "rdate": "17 Jun 2016",
+    "ldate": "22 Feb 2016",
+    "img": "user10.png"
+  },
+  {
+    "username": "Lily Ferguson",
+    "email": "evelyn.fahey@hansen.biz",
+    "replies": 411,
+    "topics": 41,
+    "solved": 837,
+    "usergroup": "General",
+    "rdate": "03 Jul 2016",
+    "ldate": "20 May 2016",
+    "img": "user11.png"
+  }
+]

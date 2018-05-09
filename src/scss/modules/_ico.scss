@@ -1,0 +1,5 @@
+.ico-clone {
+  &:before {
+    transform: scaleX(-1);
+  }
+}

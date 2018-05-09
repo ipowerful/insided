@@ -5,21 +5,9 @@
 
 .dropdown__caret {
   position: absolute;
-  right: 10px;
-  top: 12px;
-
-  margin-left: 18px;
+  right: 6px;
+  top: 6px;
   color: $color-base;
-
-
-  display: inline-block;
-  width: 0;
-  height: 0;
-  vertical-align: middle;
-  border-top: 4px dashed;
-  border-top: 4px solid \9;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
 }
 
 .dropdown__button {

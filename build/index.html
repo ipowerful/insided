@@ -113,7 +113,7 @@
             <div class="dropdown__backdrop"></div>
             <button class="button dropdown__button">
               <span class="dropdown__name">Filter usergroup</span>
-              <span class="dropdown__caret"></span>
+              <i class="ico-down-dir dropdown__caret"></i>
             </button>
             <ul class="dropdown__menu">
               <li>
@@ -121,7 +121,7 @@
                   <label class="checkbox">
                     <input type="checkbox" name="checkbox">
                     <i class="ico-ok"></i>
-                    Captain
+                    <span>Captain</span>
                   </label>
                 </a>
               </li>
@@ -130,7 +130,7 @@
                   <label class="checkbox">
                     <input type="checkbox" name="checkbox">
                     <i class="ico-ok"></i>
-                    Colonel
+                    <span>Colonel</span>
                   </label>
                 </a>
               </li>
@@ -139,7 +139,7 @@
                   <label class="checkbox">
                     <input type="checkbox" name="checkbox">
                     <i class="ico-ok"></i>
-                    General
+                    <span>General</span>
                   </label>
                 </a>
               </li>
@@ -148,7 +148,7 @@
                   <label class="checkbox">
                     <input type="checkbox" name="checkbox">
                     <i class="ico-ok"></i>
-                    Lieutenant
+                    <span>Lieutenant</span>
                   </label>
                 </a>
               </li>
@@ -157,7 +157,7 @@
                   <label class="checkbox">
                     <input type="checkbox" name="checkbox">
                     <i class="ico-ok"></i>
-                    Officer
+                    <span>Officer</span>
                   </label>
                 </a>
               </li>
@@ -173,7 +173,53 @@
           <button class="button button__primary">Add user</button>
         </header>
         <div class="content container-fluid">
-          1111
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table__col-username">
+                  <label class="checkbox table__checkbox"><input type="checkbox" name="checkbox"><i class="ico-ok"></i></label>
+                  Username
+                </th>
+                <th class="table__col-email">Email</th>
+                <th class="table__col-replies">
+                  <a href="#">
+                    Replies <i class="ico-down-dir"></i>
+                  </a>
+                </th>
+                <th class="table__col-topics">Topics</th>
+                <th class="table__col-solved">Solved</th>
+                <th class="table__col-usergroup">Usergroup</th>
+                <th class="table__col-rdate">Registration date</th>
+                <th class="table__col-ldate">Last login</th>
+              </tr>
+            </thead>
+            <tbody id="tableRowHolder">
+              <script id="tableRowTemplate" type="text/template">
+                <tr>
+                  <td>
+                    <div class="table__username-holder">
+                      <label class="checkbox table__checkbox"><input type="checkbox" name="checkbox"><i class="ico-ok"></i></label>
+                      <img class="table__avatar" src="img/upload/{{img}}" width="34" alt="">
+                      <span class="table__username">Lucy Bennett</span>
+                      <a href="#">
+                        <i class="ico-clone"></i>
+                      </a>
+                    </div>
+                  </td>
+                  <td>{{email}}</td>
+                  <td>{{topics}}</td>
+                  <td>{{replies}}</td>
+                  <td>{{solved}}</td>
+                  <td>{{usergroup}}</td>
+                  <td>{{rdate}}</td>
+                  <td>{{ldate}}</td>
+                </tr>
+              </script>
+              <tr>
+                <td colspan="9" class="text-center h-bold">No results</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </main>
       <div class="backdrop faded">
