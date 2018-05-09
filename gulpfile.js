@@ -177,6 +177,7 @@ gulp.task('build', [
     'font',
     'favicon',
     'php',
+    'data',
     'htaccess',
     'html',
     'image',
