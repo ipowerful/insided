@@ -2225,6 +2225,9 @@ input[type="text"]::-webkit-input-placeholder {
 .table__col-ldate {
   width: 8.99%; }
 
+.table tr.is-checked td {
+  background: #e6f3fb; }
+
 .ico-clone:before {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);

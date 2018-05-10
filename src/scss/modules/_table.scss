@@ -87,3 +87,8 @@
 .table__col-ldate {
   width: 8.99%; 
 }
+
+// STATES
+.table tr.is-checked td {
+  background: $color-blue-light2;
+}

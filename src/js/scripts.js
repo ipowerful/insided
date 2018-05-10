@@ -4,8 +4,6 @@ $(document).ready(function(){
 
 
 
-
-
   // Sidebar Navigation
   //------------------------------------------------------------------------------
 
@@ -16,7 +14,42 @@ $(document).ready(function(){
   });
 
 
+  // Table Toggle Row
+  //------------------------------------------------------------------------------
 
+  $('.table').on('change', '.js-toggle-row input', function (e){
+    var checkbox = $(this);
+    var row = $(this).parents('tr');
+
+    row.toggleClass('is-checked');
+  });
+
+
+  // Table Toggle Row All
+  //------------------------------------------------------------------------------
+  $('.table').on('change', '.js-toggle-row-all input', function (e){
+    var isChecked = $(this).is(":checked");
+
+    $('.table tr').each(function(){
+      var input = $(this).find('.js-toggle-row input');
+
+      if( !isChecked ){
+        input.removeAttr('checked');
+        $(this).removeClass('is-checked');
+
+      } else {
+        input.attr('checked', 'checked');
+        $(this).addClass('is-checked');
+      }
+    });
+  });
+
+
+
+  // User Data Processing
+  //------------------------------------------------------------------------------
+
+  // Load User Data
   getUsersData();  
 
   // Get Data via Ajax
@@ -64,7 +97,7 @@ $(document).ready(function(){
 })
 
 
-// Sidebar Navigation
+// AJAX Settings
 //------------------------------------------------------------------------------
 
 $(document).ajaxStart(function() {
