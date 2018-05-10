@@ -1,0 +1,11 @@
+.sort__asc i {
+  &:before {
+    content: '\e80e';
+  }
+}
+
+.sort__desc i {
+  &:before {
+    content: '\e806';
+  }
+}

@@ -6,6 +6,7 @@
 .ico-inbox:before { content: '\e804'; } /* '' */
 .ico-ok:before { content: '\e805'; } /* '' */
 .ico-down-dir:before { content: '\e806'; } /* '' */
+.ico-up-dir:before { content: '\e80e'; } /* '' */
 .ico-search:before { content: '\e80f'; } /* '' */
 .ico-spin3:before { content: '\e832'; } /* '' */
 .ico-beaker:before { content: '\f0c3'; } /* '' */

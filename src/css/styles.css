@@ -2234,6 +2234,12 @@ input[type="text"]::-webkit-input-placeholder {
        -o-transform: scaleX(-1);
           transform: scaleX(-1); }
 
+.sort__asc i:before {
+  content: '\e80e'; }
+
+.sort__desc i:before {
+  content: '\e806'; }
+
 .is-visible {
   opacity: 1;
   visibility: visible; }

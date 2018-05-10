@@ -6,43 +6,65 @@
               <tr>
                 <th class="table__col-username">
                   <label class="checkbox table__checkbox js-toggle-row-all"><input type="checkbox" name="checkbox"><i class="ico-ok"></i></label>
-                  Username
-                </th>
-                <th class="table__col-email">Email</th>
-                <th class="table__col-replies">
-                  <a href="#">
-                    Replies <i class="ico-down-dir"></i>
+                  <a href="#" class="js-table-sort sort" data-column="username" data-dir>
+                    Username <i class="ico-"></i>
                   </a>
                 </th>
-                <th class="table__col-topics">Topics</th>
-                <th class="table__col-solved">Solved</th>
-                <th class="table__col-usergroup">Usergroup</th>
-                <th class="table__col-rdate">Registration date</th>
+                <th class="table__col-email">
+                  <a href="#" class="js-table-sort sort" data-column="email" data-dir>
+                    Email <i class="ico-"></i>
+                  </a>
+                </th>
+                <th class="table__col-replies">
+                  <a href="#" class="js-table-sort sort sort__desc" data-column="replies" data-dir="desc">
+                    Replies <i class="ico-"></i>
+                  </a>
+                </th>
+                <th class="table__col-topics">
+                  <a href="#" class="js-table-sort sort" data-column="topics" data-dir>
+                    Topics <i class="ico-"></i>
+                  </a>
+                </th>
+                <th class="table__col-solved">
+                  <a href="#" class="js-table-sort sort" data-column="solved" data-dir>
+                    Solved <i class="ico-"></i>
+                  </a>
+                </th>
+                <th class="table__col-usergroup">
+                  <a href="#" class="js-table-sort sort" data-column="usergroup" data-dir>
+                    Usergroup <i class="ico-"></i>
+                  </a>
+                </th>
+                <th class="table__col-rdate">
+                  <a href="#" class="js-table-sort sort" data-column="rdate" data-dir>
+                    Registration date <i class="ico-"></i>
+                  </a>
+                </th>
                 <th class="table__col-ldate">Last login</th>
               </tr>
             </thead>
+            <script id="tableRowTemplate" type="text/template">
+              <tr>
+                <td>
+                  <div class="table__username-holder">
+                    <label class="checkbox table__checkbox js-toggle-row"><input type="checkbox" name="checkbox"><i class="ico-ok"></i></label>
+                    <img class="table__avatar" src="img/upload/{{img}}" width="34" alt="">
+                    <span class="table__username">{{username}}</span>
+                    <a href="#">
+                      <i class="ico-clone"></i>
+                    </a>
+                  </div>
+                </td>
+                <td>{{email}}</td>
+                <td>{{replies}}</td>
+                <td>{{topics}}</td>
+                <td>{{solved}}</td>
+                <td>{{usergroup}}</td>
+                <td>{{rdate}}</td>
+                <td>{{ldate}}</td>
+              </tr>
+            </script>
             <tbody id="tableRowHolder">
-              <script id="tableRowTemplate" type="text/template">
-                <tr>
-                  <td>
-                    <div class="table__username-holder">
-                      <label class="checkbox table__checkbox js-toggle-row"><input type="checkbox" name="checkbox"><i class="ico-ok"></i></label>
-                      <img class="table__avatar" src="img/upload/{{img}}" width="34" alt="">
-                      <span class="table__username">Lucy Bennett</span>
-                      <a href="#">
-                        <i class="ico-clone"></i>
-                      </a>
-                    </div>
-                  </td>
-                  <td>{{email}}</td>
-                  <td>{{topics}}</td>
-                  <td>{{replies}}</td>
-                  <td>{{solved}}</td>
-                  <td>{{usergroup}}</td>
-                  <td>{{rdate}}</td>
-                  <td>{{ldate}}</td>
-                </tr>
-              </script>
               <tr>
                 <td colspan="9" class="text-center h-bold">No results</td>
               </tr>
