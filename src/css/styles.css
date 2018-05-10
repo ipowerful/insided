@@ -2168,6 +2168,7 @@ input[type="text"]::-webkit-input-placeholder {
       text-align: left;
       white-space: nowrap; }
       .table thead > tr > th > a {
+        display: block;
         color: #111; }
         .table thead > tr > th > a > i {
           display: inline-block; }

@@ -17,7 +17,7 @@
         text-align: left;
         white-space: nowrap;
         > a {
-          
+          display: block;
           color: $color-base;
           > i {
             display: inline-block;
