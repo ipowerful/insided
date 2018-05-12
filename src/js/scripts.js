@@ -159,6 +159,9 @@ $(document).ready(function(){
 
         $holder.append(row);
       });
+
+      // show result count
+      $('.js-results-count').html(data.length);
     }
   }
 })
