@@ -11,6 +11,7 @@
       name: '',
       menu: '',
       backdrop: '',
+      input: '',
     };
 
     this.init();
@@ -25,6 +26,7 @@
     this.html.name = $(this.html.dropdown).find('.dropdown__name');
     this.html.menu = $(this.html.dropdown).find('.dropdown__menu');
     this.html.backdrop = $(this.html.dropdown).find('.dropdown__backdrop');
+    this.html.input = $(this.html.dropdown).find('.dropdown__input');
 
 
     $(this.html.button).on('click', function(event){
@@ -88,9 +90,11 @@
   Dropdown.prototype.setValue = function($el) {
 
     var name = $el.html();
+    var value = $el.data('value');
 
     $(this.html.name).html(name);
     $(this.html.button).addClass('is-selected');
+    $(this.html.input).val(value);
     this.close();
 
   };
