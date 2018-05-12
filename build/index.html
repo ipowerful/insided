@@ -109,7 +109,7 @@
       <main class="main">
         <header class="page-top container-fluid">
           <h1 class="page-top__heading">User overview</h1>
-          <div class="dropdown dropdown-filter">
+          <div class="dropdown page-top__dropdown" id="jsUsergroupFilter">
             <div class="dropdown__backdrop"></div>
             <button class="button dropdown__button">
               <span class="dropdown__name">Filter usergroup</span>
@@ -173,6 +173,40 @@
           <button class="button button__primary">Add user</button>
         </header>
         <div class="content container-fluid">
+          <div class="controls mb10">
+          Results: 1337
+          
+          
+          
+          
+          
+          
+          
+           <div class="dropdown" id="jsRowsCount">
+              <div class="dropdown__backdrop"></div>
+              <button class="button dropdown__button">
+                <span class="dropdown__name">10 Rows</span>
+                <i class="ico-down-dir dropdown__caret"></i>
+              </button>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" role="button">
+                    10 Rows
+                  </a>
+                </li>
+                <li>
+                  <a href="#" role="button">
+                    25 Rows
+                  </a>
+                </li>
+                <li>
+                  <a href="#" role="button">
+                    50 Rows
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <table class="table">
             <thead>
               <tr>

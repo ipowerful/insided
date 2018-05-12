@@ -1,8 +1,9 @@
 (function($) {
   "use strict";
 
-  var Dropdown = function( selector ) {
-    this.selector = selector;
+  var Dropdown = function( options ) {
+    this.selector = options.selector;
+    this.isMultidrop = options.isMultidrop;
 
     this.html = {
       dropdown: '',
@@ -38,7 +39,12 @@
 
     $(this.html.menu).find(' > li > a').on('click', function(event){
       event.preventDefault();
-      self.setCheckbox( $(this) );
+
+      if( self.isMultidrop ) {
+        self.setCheckbox( $(this) );
+      } else {
+        self.setValue( $(this) );
+      }
     })
   };
 
@@ -79,6 +85,17 @@
     }
   };
 
-  var dropdownFilter  = new Dropdown('.dropdown-filter');
+  Dropdown.prototype.setValue = function($el) {
+
+    var name = $el.html();
+
+    $(this.html.name).html(name);
+    $(this.html.button).addClass('is-selected');
+    this.close();
+
+  };
+
+  var dropdownFilter  = new Dropdown({ selector: '#jsUsergroupFilter', isMultidrop: true });
+  var dropdownControl  = new Dropdown({ selector: '#jsRowsCount', isMultidrop: false });
   
 })(jQuery);
