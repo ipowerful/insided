@@ -74,7 +74,21 @@
 
 @mixin link() {
   transition: $transition-fast;
+  color: $color-blue;
+  border-color: $color-blue;
+  &:hover,
+  &:focus,
+  a:visited {
+    color: $color-gray;
+    border-color: $color-gray;
+    background: transparent;
+  }
+}
 
+@mixin link-inverted() {
+  transition: $transition-fast;
+  color: $color-gray;
+  border-color: $color-gray;
   &:hover,
   &:focus,
   a:visited {

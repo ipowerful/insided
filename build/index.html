@@ -176,38 +176,52 @@
           <div class="tablebar mb10">
           
             <div class="tablebar__result"><span class="h-bold">Results:</span> 1337</div>
-            <div class="tablebar__tools">
+            
+            <ul class="pagination tablebar__tools element">
+              <li><a href="#" class="pagination__link">First</a></li>
+              <li>-</li>
+              <li><a href="#" class="pagination__link">Previous</a></li>
           
           
+              <li><a href="#" class="pagination__link is-active">Next</a></li>
+              <li>-</li>
+              <li><a href="#" class="pagination__link is-active">Last</a></li>
+            </ul>
           
+          <!--   <div class="pagination tablebar__tools element">
+            <a href="#" class="pagination__link">First</a>
+            <span class="pagination__spacer">-</span>
+            <a href="#" class="pagination__link">Previous</a>
+            
+            <a href="#" class="pagination__link is-active">Next</a>
+            <span class="pagination__spacer">-</span>
+            <a href="#" class="pagination__link is-active">Last</a>
+          </div> -->
           
-          
-          
-              <div class="dropdown element" id="jsRowsCount">
-                <div class="dropdown__backdrop"></div>
-                <button class="button dropdown__button is-selected">
-                  <span class="dropdown__name">10 Rows</span>
-                  <i class="ico-down-dir dropdown__caret"></i>
-                  <input type="hidden" class="dropdown__input" value="10">
-                </button>
-                <ul class="dropdown__menu">
-                  <li>
-                    <a href="#" role="button" data-value="10">
-                      10 Rows
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" role="button" data-value="25">
-                      25 Rows
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" role="button" data-value="50">
-                      50 Rows
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div class="dropdown element tablebar__tools" id="jsRowsCount">
+              <div class="dropdown__backdrop"></div>
+              <button class="button dropdown__button is-selected">
+                <span class="dropdown__name">10 Rows</span>
+                <i class="ico-down-dir dropdown__caret"></i>
+                <input type="hidden" class="dropdown__input" value="10">
+              </button>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" role="button" data-value="10">
+                    10 Rows
+                  </a>
+                </li>
+                <li>
+                  <a href="#" role="button" data-value="25">
+                    25 Rows
+                  </a>
+                </li>
+                <li>
+                  <a href="#" role="button" data-value="50">
+                    50 Rows
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <table class="table">
