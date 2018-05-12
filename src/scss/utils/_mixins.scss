@@ -85,7 +85,6 @@
 }
 
 @mixin button($color, $color-brd, $color-bg, $color-hover-bg) {
-  margin: 10px 5px;
   font-weight: 700;
   color: $color;
   background: $color-bg;

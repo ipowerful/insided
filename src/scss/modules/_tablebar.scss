@@ -1,0 +1,12 @@
+.tablebar {
+  display: flex;
+  align-items: center;
+}
+
+.tablebar__result {
+  flex: 1 1 auto;
+}
+
+.tablebar__tools {
+  flex: 0 0 auto;
+}
