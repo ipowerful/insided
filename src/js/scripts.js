@@ -76,6 +76,15 @@ $(document).ready(function(){
   });
   
 
+  // Table Search
+  //------------------------------------------------------------------------------
+  $('#jsUsernameSearch .search__btn').click(function(e) {
+    e.preventDefault();
+
+    getUsersData();
+  });
+
+
 
 
   // User Data Processing
@@ -85,8 +94,10 @@ $(document).ready(function(){
   getUsersData();  
 
   // Get User Attr
-  function getUsersSortAttr(){
+  function getUsersAttr(){
     var attr = {};
+
+    // sort attr
     $('.table .sort').each(function(){
       if( $(this).data('dir') != '' ){
         attr['dir'] = $(this).data('dir');
@@ -94,16 +105,25 @@ $(document).ready(function(){
         return attr;
       }
     });
+
+    // search attr
+    var search = $(document).find('#jsUsernameSearch');
+    var searchInput = $(search).find('.search__input');
+    var searchInputVal = searchInput.val();
+    if( searchInputVal !== undefined ){
+      attr['search'] = searchInputVal;
+    }
+
     return attr;
   }
 
   // Get Data via Ajax
   function getUsersData(){
     var url = 'php/users.php';
-    var data = $.param( getUsersSortAttr() );
+    var data = getUsersAttr() ;
     $.ajax({
       url: url,
-      data: data,
+      data: $.param(data),
       dataType: 'json',
       success: successFn
     });
