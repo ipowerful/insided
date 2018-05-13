@@ -29,7 +29,7 @@ function filter_by_value ($array, $index, $value){
       foreach(array_keys($array) as $key) {
          $temp[$key] = $array[$key][$index];
 
-         if (strpos(strtolower($temp[$key]), strtolower($value)) !== false) {
+         if (strpos(mb_strtolower($temp[$key]), mb_strtolower($value)) !== false) {
             $newarray[$key] = $array[$key];
          }
       }
