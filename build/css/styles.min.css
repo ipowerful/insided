@@ -2680,7 +2680,7 @@ input[type="text"]::-webkit-input-placeholder {
   background: #2aaae1; }
 
 .backdrop__icon {
-  font-size: 50px;
+  font-size: 4em;
   color: #fff; }
 
 .backdrop img {

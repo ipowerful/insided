@@ -19,3 +19,9 @@ gulp watch
 # build for production
 gulp build --production
 ```
+
+## Installation
+* Bootstrap
+* SMACSS metodology
+* Simple API
+* Block namespacing

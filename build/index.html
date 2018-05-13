@@ -164,7 +164,7 @@
             </ul>
           </div>
           <div class="search page-top__search element" id="jsUsernameSearch">
-            <input type="text" class="search__input" placeholder="Search for user">
+            <input type="text" class="search__input js-input-focus" placeholder="Search for user">
             <button class="search__btn button button__default">
               <i class="ico-search"></i>
             </button>
@@ -275,6 +275,11 @@
                 <td>{{usergroup}}</td>
                 <td>{{rdate}}</td>
                 <td>{{ldate}}</td>
+              </tr>
+            </script>
+            <script id="tableNoRowTemplate" type="text/template">
+              <tr>
+                <td colspan="9" class="text-center h-bold">No results</td>
               </tr>
             </script>
             <tbody id="tableRowHolder">

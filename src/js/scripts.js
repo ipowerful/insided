@@ -91,7 +91,11 @@ $(document).ready(function(){
     getUsersData();
   });
 
-
+  $('#jsUsernameSearch .search__input').keyup(function(e) {
+    if(e.keyCode == 13){
+      getUsersData();
+    }
+  });
 
 
   // User Data Processing
@@ -138,12 +142,14 @@ $(document).ready(function(){
 
   // Success
   function successFn(data){
-    if(data.length>0){
 
-      var $holder = $('#tableRowHolder');
-      var tpl = $('#tableRowTemplate').html();
+    var $holder = $('#tableRowHolder');
+    var rowTemplate = $('#tableRowTemplate').html();
+    var noRowTemplate = $('#tableNoRowTemplate').html();
 
-      $holder.empty();
+    $holder.empty();
+
+    if(data && data.length>0){
 
       var cols = [
         'img', 
@@ -158,7 +164,7 @@ $(document).ready(function(){
       ];
 
       $.each(data, function( key, json ) {
-        var row = tpl;
+        var row = rowTemplate;
 
         $.each(cols, function( key2, column ) {
           row = row.replace('{{' + column + '}}', json[ column ]);
@@ -167,9 +173,15 @@ $(document).ready(function(){
         $holder.append(row);
       });
 
-      // show result count
-      $('.js-results-count').html(data.length);
+      var jsResultsCount = data.length;
+    } else {
+      var row = noRowTemplate;
+      $holder.append(row);
+      var jsResultsCount = 0;
     }
+
+    // show result count
+    $('.js-results-count').html(jsResultsCount);
   }
 })
 
