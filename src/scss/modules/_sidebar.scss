@@ -47,8 +47,7 @@
   display: block;
   padding: 6px 6px 6px 54px;
   font-size: 12px;
-  color: $color-base;
-  @include link();
+  @include link($color-base, $color-blue);
 
   &.is-active {
     font-weight: 700;

@@ -31,13 +31,3 @@
   line-height: 15px;
   color: $color-gray;
 }
-
-.h-black {
-  color: $color-base;
-  @include link();
-}
-
-.h-blue {
-  color: $color-blue;
-  @include link();
-}

@@ -25,28 +25,15 @@
   height: 100%;
 }
 
-@mixin link() {
+@mixin link($baseColor, $hoverColor) {
   transition: $transition-fast;
-  color: $color-blue;
-  border-color: $color-blue;
+  color: $baseColor;
+  border-color: $baseColor;
   &:hover,
   &:focus,
   a:visited {
-    color: $color-gray;
-    border-color: $color-gray;
-    background: transparent;
-  }
-}
-
-@mixin link-inverted() {
-  transition: $transition-fast;
-  color: $color-gray;
-  border-color: $color-gray;
-  &:hover,
-  &:focus,
-  a:visited {
-    color: $color-blue;
-    border-color: $color-blue;
+    color: $hoverColor;
+    border-color: $hoverColor;
     background: transparent;
   }
 }

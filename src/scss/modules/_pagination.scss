@@ -10,9 +10,8 @@
 }
 
 .pagination__link{ 
-  color: $color-gray;
   &.is-active {
-    @include link();
+    @include link($color-blue, $color-gray);
   }
 }
 

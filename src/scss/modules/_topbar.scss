@@ -25,7 +25,7 @@
 }
 
 .topbar__nav > li > a {
-  @include link-inverted();
+  @include link($color-gray, $color-blue);
 }
 
 .topbar__nav-mail {
@@ -38,6 +38,7 @@
   &:before {
     margin: auto;
   }
+  @include link(#fff, $color-blue);
 }
 
 .topbar__avatar {
