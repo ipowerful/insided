@@ -106,18 +106,6 @@
     border-color: #878787;
     background: transparent; }
 
-@screen-xs :                  1px;
-@screen-xs-min :              @screen-xs;
-@screen-phone :               @screen-xs-min;
-@screen-sm :                  2px;
-@screen-sm-min :              @screen-sm;
-@screen-tablet :              @screen-sm-min;
-@screen-md :                  3px;
-@screen-md-min :              @screen-md;
-@screen-desktop :             @screen-md-min;
-@screen-lg :                  9999px;
-@screen-lg-min :              @screen-lg;
-@screen-lg-desktop :          @screen-lg-min;
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
