@@ -14,7 +14,8 @@
 }
 
 .backdrop__icon {
-  font-size: 4em;
+  font-size: 50px;
+  line-height: 1em;
   color: #fff;
 }
 
@@ -29,4 +30,8 @@
   to {
     opacity: 0.5;
   }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  line-height: 1em;
 }
