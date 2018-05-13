@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   @include list();
+  margin: 0 10px;
 
   > li {
     padding: 0 3px;
@@ -17,4 +18,19 @@
 
 .pagination__spacer {
   padding: 0 5px;
+}
+
+.pagination .pagination__control {
+  padding: 0 15px;
+  font-weight: 700;
+}
+
+.pagination__input {
+  display: inline-block;
+  width: 30px;
+  margin: 0 10px;
+}
+.pagination__input input {
+  padding: 0 2px;
+  text-align: center;
 }

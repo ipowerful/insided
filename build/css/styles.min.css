@@ -2684,8 +2684,6 @@ input[type="text"]::-webkit-input-placeholder {
   height: 100%;
   padding: 8px 10px;
   line-height: 14px;
-  -webkit-box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.1);
   border: none;
   outline: none; }
 
@@ -2702,11 +2700,10 @@ input[type="text"]::-webkit-input-placeholder {
 
 .input {
   height: 30px;
+  width: 100%;
   line-height: 14px;
   border: 1px #c5c5c5 solid;
   border-radius: 2px;
-  -webkit-box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 8px 10px; }
 
@@ -2884,7 +2881,8 @@ input[type="text"]::-webkit-input-placeholder {
           align-items: center;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin: 0 10px; }
   .pagination > li {
     padding: 0 3px; }
 
@@ -2904,6 +2902,19 @@ input[type="text"]::-webkit-input-placeholder {
 
 .pagination__spacer {
   padding: 0 5px; }
+
+.pagination .pagination__control {
+  padding: 0 15px;
+  font-weight: 700; }
+
+.pagination__input {
+  display: inline-block;
+  width: 30px;
+  margin: 0 10px; }
+
+.pagination__input input {
+  padding: 0 2px;
+  text-align: center; }
 
 .is-visible {
   opacity: 1;

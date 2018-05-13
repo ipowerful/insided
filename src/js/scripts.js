@@ -3,6 +3,13 @@
 $(document).ready(function(){
 
 
+  // Input Focus
+  //------------------------------------------------------------------------------
+
+  $('.js-input-focus').focus(function(e) {
+    e.preventDefault();
+    $(this).select();
+  });
 
   // Sidebar Navigation
   //------------------------------------------------------------------------------
