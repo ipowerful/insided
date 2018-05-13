@@ -1,38 +1,3 @@
-@mixin respond-to($media) {
-   $i: 0; // счетчик для определения первого элемента, а именно под разрешение телефона
-   @each $key, $value in $screen-widths {
-      @if $media == $key {
-         @if $i == 0 {
-            @media only screen and (max-width: $value) { 
-              @content; 
-            }
-         } @else{
-            @media only screen and (min-width: $value) { 
-               @content; 
-            }
-         }
-      }
-      $i: $i + 1; 
-   }
-}
-
-@mixin abs-h-center-auto() {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-@mixin abs-v-center-auto() {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@mixin abs-center-auto() {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
-
 @mixin clearfix {
   zoom:1;
   &:before, &:after {
@@ -58,18 +23,6 @@
   top: 0;
   width: 100%;
   height: 100%;
-}
-
-@mixin flex-holder() {
-  @include respond-to('desktop') {
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
-    .col {
-      display: flex;
-      align-items: stretch;
-    }
-  }
 }
 
 @mixin link() {

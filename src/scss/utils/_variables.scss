@@ -7,7 +7,6 @@
 ///
 $font-path: '../font';
 $font-base: 'Helvetica Neue',Helvetica,Arial,Sans-Serif;
-//$font-base: Helvetica,Arial,Sans-Serif;
 
 ///== Colors
 ///
@@ -30,19 +29,6 @@ $color-blue-light2: #e6f3fb;
 
 
 $color-green: #0c903f;
-
-
-///== Screen resolution
-///
-
-$screen-widths: (
-	'phone':		767px, // xs
-	'tablet':		768px, // sm
-	'desktop':	992px, // md
-  'wide':     1200px, // lg
-  'mwide':    1400px, // lg
-  'xwide':    1800px, // lg
-);
 
 
 //== Transitions

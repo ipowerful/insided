@@ -5,12 +5,15 @@
     text-decoration: none;
   }
 }
+
 .h-relative {
   position: relative;
 }
+
 .h-bold {
   font-weight: 600;
 }
+
 .h-font-medium {
   font-size: 120%;
 }
@@ -37,13 +40,4 @@
 .h-blue {
   color: $color-blue;
   @include link();
-}
-
-.h-flex-bottom {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-.h-flex-holder {
-  @include flex-holder();
 }

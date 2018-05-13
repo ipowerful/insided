@@ -106,43 +106,6 @@
     border-color: #878787;
     background: transparent; }
 
-.h-flex-bottom {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-@media only screen and (min-width: 992px) {
-  .h-flex-holder {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .h-flex-holder .col {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: stretch;
-      -webkit-align-items: stretch;
-          -ms-flex-align: stretch;
-              align-items: stretch; } }
-
 @screen-xs :                  1px;
 @screen-xs-min :              @screen-xs;
 @screen-phone :               @screen-xs-min;
@@ -2159,7 +2122,7 @@ input[type="text"]::-webkit-input-placeholder {
     .table thead > tr > th {
       height: 44px;
       padding: 10px;
-      font-weight: 700px;
+      font-weight: 700;
       text-align: left;
       white-space: nowrap; }
       .table thead > tr > th > a {
