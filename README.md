@@ -20,8 +20,5 @@ gulp watch
 gulp build --production
 ```
 
-## Installation
-* Bootstrap
-* SMACSS metodology
-* Simple API
-* Block namespacing
+## Technologies
+HTML, CSS, SCSS, SMACSS, Vanila JS + jQuery, Bootstrap, REST, API mocking, Gulp, PHP.
